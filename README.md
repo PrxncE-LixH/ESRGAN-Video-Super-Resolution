@@ -15,11 +15,7 @@ An optimized inference pipeline for image super-resolution built on top of [Real
 
 ![Benchmark Results](benchmarks/benchmark_preview.png)
 
-
-![Results](benchmarks/video-00.mp4)
-
-![Results](benchmarks/video-01.mp4)
-
+[![Demo](benchmarks/screenshot.png)](https://youtu.be/pBi6Q7k7nBI)
 
 ---
 
