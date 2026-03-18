@@ -69,12 +69,12 @@ def preprocess(img):
     return np.ascontiguousarray(img)
 
 def postprocess(output):
-    # output: float16 1x3xH'xW' → BGR uint8
-    output = np.squeeze(output, axis=0)                  # 3xH'xW'
+    # output: float16 1x3xH'xW' - BGR
+    output = np.squeeze(output, axis=0)            # 3xH'xW'
     output = np.clip(output, 0, 1)
     output = np.transpose(output, (1, 2, 0))             # HWC
     output = (output * 255.0).astype(np.uint8)
-    output = output[:, :, ::-1]                          # RGB→BGR
+    output = output[:, :, ::-1]                          # RGB - BGR
     return output
 
 # pipeline functions

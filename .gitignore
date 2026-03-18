@@ -155,7 +155,7 @@ README_CN.md
 *.pth
 
 #python files
-export_onnx_1.py
+export_onnx1.py
 inference_realesrgan_video.py
 inference_realesrgan.py
 main_default.py
