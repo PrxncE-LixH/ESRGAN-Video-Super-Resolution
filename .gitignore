@@ -6,6 +6,8 @@ tb_logger/*
 wandb/*
 tmp/*
 weights/*
+assets/*
+inputs/*
 
 version.py
 
@@ -118,6 +120,7 @@ celerybeat.pid
 env/
 venv/
 ENV/
+esrvenv/
 env.bak/
 venv.bak/
 
@@ -138,3 +141,23 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# logs
+bench.txt
+README_old.md
+README_CN.md
+
+# models and TRT
+*.onnx
+*.engine
+*.trt
+*.data
+*.pth
+
+#python files
+export_onnx_1.py
+inference_realesrgan_video.py
+inference_realesrgan.py
+main_default.py
+model_pipeline.py
+onnx1_main.py
