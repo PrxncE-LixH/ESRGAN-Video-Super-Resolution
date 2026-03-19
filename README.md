@@ -24,10 +24,10 @@ An optimized inference pipeline for image super-resolution built on top of [Real
 
 ## How it works
 
-1. **Model selection** — `realesr-general-x4v3` (SRVGGNetCompact, 32 conv layers).
-2. **ONNX export** — the model is exported to ONNX (FP16, static 640×640 input, opset 18) for graph-level optimization.
-3. **TensorRT engine build** — the ONNX graph is compiled into a TensorRT FP16 engine, enabling kernel fusion, layer optimization, and Tensor Core utilization on NVIDIA GPUs.
-4. **Async inference** — inference runs on a persistent CUDA stream with page-locked memory transfers for minimal CPU, GPU overhead.
+1. **Model selection** - `realesr-general-x4v3` (SRVGGNetCompact, 32 conv layers).
+2. **ONNX export** - the model is exported to ONNX (FP16, static 640×640 input, opset 18) for graph-level optimization.
+3. **TensorRT engine build** - the ONNX graph is compiled into a TensorRT FP16 engine, enabling kernel fusion, layer optimization, and Tensor Core utilization on NVIDIA GPUs.
+4. **Async inference** - inference runs on a persistent CUDA stream with page-locked memory transfers for minimal CPU, GPU overhead.
 
 ---
 
@@ -83,7 +83,7 @@ This generates `realesrgan-v3-fp16.trt` in the project root.
 
 ### 4. Run inference
 
-Place low resolution video files in `./LR/` then run or refer to `main.py`:
+Place low resolution video file in `./LR/` then run or refer to `main.py`:
 
 ```bash
 python main.py
