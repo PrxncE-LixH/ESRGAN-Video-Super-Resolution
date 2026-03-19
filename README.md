@@ -112,7 +112,6 @@ Ubuntu 24.04
 RX 7900 xtx
 ROCm 7.2
 Pytorch 2.10 - AMD recommended docker container
-
 ```
 
 - **Optimized**
@@ -123,7 +122,6 @@ Cuda 12.8
 Pytorch 2.10
 TensorRT 10.15.1.29
 ONNX 1.16.2
-
 ```
 
 ## Credits
