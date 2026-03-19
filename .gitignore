@@ -146,7 +146,6 @@ dmypy.json
 bench.txt
 README_old.md
 README_CN.md
-setup.cfg
 
 # models and TRT
 *.onnx
