@@ -1,6 +1,6 @@
 # Real-ESRGAN TensorRT Inference Pipeline
 
-An optimized inference pipeline for image super-resolution built on top of [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) by [Xintao Wang](https://github.com/xinntao). This project focuses on adapting it for video and reducing inference latency through model selection, TensorRT FP16 export, and CUDA-accelerated inference — achieving an **87% reduction in inference time** from the baseline.
+An optimized inference pipeline for image super-resolution built on top of [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) by [Xintao Wang](https://github.com/xinntao). This project focuses on adapting it for video upscaling and reducing inference latency through model selection, TensorRT FP16 export, and CUDA-accelerated inference, achieving an **87% reduction in inference time** from the baseline.
 
 ---
 
