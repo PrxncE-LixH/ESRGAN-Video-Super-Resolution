@@ -96,10 +96,10 @@ Final results will be saved to `./final_output/`.
 ## Notes
 
 - Input is resized to **640×640** before inference and the output is 4× upscaled (2560×2560). Adjust `INPUT_H` / `INPUT_W` in `main.py` and re-export if your use case differs.
-- TensorRT engine files (`.trt`) and ONNX files (`.onnx`) are excluded from this repo via `.gitignore` — build them locally following the steps above.
+- TensorRT engine files (`.trt`) and ONNX files (`.onnx`) are excluded from this repo via `.gitignore`, build them locally following the steps above.
 
 - Inference averages 26ms per frame. End-to-end throughput is currently
-  I/O bound due to writing 2560×2560 PNG frames — async writes are a
+  I/O bound due to writing 2560×2560 PNG frames - async writes are a
   planned improvement.
 
 ---
